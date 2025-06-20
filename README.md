@@ -1,0 +1,2 @@
+# RPGMakerMzPlugins
+RPGツクールMZのプラグイン集

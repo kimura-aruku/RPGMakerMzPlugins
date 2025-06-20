@@ -705,7 +705,7 @@ TMPlugin.DescriptionEx.PageNumberPositionType =
         if(!descEx.IsVisiblePageNumber){
             return;
         }
-        if(this.maxPageNumber <= 1){
+        if(!(this.maxPageNumber >= 2)){
             return;
         }
         const pageString = `${this.currentPageNumber}/${this.maxPageNumber}`;

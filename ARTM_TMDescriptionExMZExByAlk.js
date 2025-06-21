@@ -1396,12 +1396,16 @@ TMPlugin.DescriptionEx.PageNumberPositionType =
 
     Scene_Message.prototype.descriptionOpen = function(mainWindow) {
         Scene_Base.prototype.descriptionOpen.call(this, mainWindow);
-        this.moveMenuButton(true);
+        if (this._cancelButton) {
+            this.moveMenuButton(true);
+        }
     };
     
     Scene_Message.prototype.descriptionClose = function() {
         Scene_Base.prototype.descriptionClose.call(this);
-        this.moveMenuButton(false);
+        if (this._cancelButton) {
+            this.moveMenuButton(false);
+        }
     };
 
     Scene_Message.prototype.moveMenuButton = function(flag) {

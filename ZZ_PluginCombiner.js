@@ -61,7 +61,26 @@
 
             AlchemyClassAlias.Scene_Alchemy.prototype.descriptionOpen = function(mainWindow) {
                 this._descriptionMainWindow = mainWindow;
-                this._descriptionExWindow.setItem(this._descriptionMainWindow.recipe().targetItemData());
+                const item = this._descriptionMainWindow.recipe().targetItemData();
+                // 対象が特徴「スキル追加」を持つ場合、そのスキルをキャッシュ
+                this._originalItem = item;
+                this._descriptionSkillList = [];
+                this._currentDescriptionPageIndex = 0;
+                if (DataManager.isWeapon(item) || DataManager.isArmor(item)) {
+                    for (const trait of item.traits) {
+                        if (trait.code !== Game_BattlerBase.TRAIT_SKILL_ADD) {
+                            continue;
+                        }
+                        const skill = $dataSkills[trait.dataId];
+                        if (!skill) {
+                            continue;
+                        }
+                        this._descriptionSkillList.push(skill);
+                    }
+                }
+                this._descriptionExWindow.currentPageNumber = 1;
+                this._descriptionExWindow.maxPageNumber = this._descriptionSkillList.length + 1; 
+                this._descriptionExWindow.setItem(item);
                 this._descriptionExWindow.open();
                 this._descriptionExWindow.activate();
             };

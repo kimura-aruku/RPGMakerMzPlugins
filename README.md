@@ -16,10 +16,13 @@
 7. 「状態」をONに設定し、必要に応じてパラメータを変更してください。
 8. 設定が完了したら「OK」ボタンを押下し、「プラグイン管理」画面を閉じます。
 
+### 非プログラマ向けのサポート
+- [サポート用フォーム](https://forms.gle/GH1Ekje8EqWjRfXD6)
+
 ## ARTM_TMDescriptionExMZExByAlk.js
 
 ### 概要
-- TMDescriptionEx（原作者：tomoaky様）をMZに移植したARTM_TMDescriptionExMZ（改変者：Artemis様）に以下の機能を追加します。
+- TMDescriptionEx（原作者：tomoaky様）をMZに移植したARTM_TMDescriptionExMZ（改変者：Artemis様）に以下の機能を追加したプラグイン。
   - 詳細説明を表示する対象の武器・防具が特徴「スキル追加」を持つ場合、2ページ目以降に該当スキルの詳細説明を表示する。
 
   - 'left', 'right', 'pageup', 'pagedown'に該当する入力でページを変更する。

@@ -1,8 +1,16 @@
+//=============================================================================
+// ZZ_PluginCombiner.js
+// Copyright (c) 2025-2026 あるく
+// SPDX-License-Identifier: MIT
+// This software is released under the MIT license.
+// https://opensource.org/license/mit
+//=============================================================================
+
 /*:ja
  * @target MZ
  * @plugindesc 他のプラグイン同士の機能を組み合わせ、新たな動作を提供。
  * @author あるく
- * @url 
+ * @url https://github.com/kimura-aruku/RPGMakerMzPlugins
  * @help
  * 
  * 【ZZ_PluginCombiner 概要】
@@ -23,6 +31,7 @@
  * ・必要に応じてデバッグや調整を行ってください。
  * 
  * 【利用規約】
+ * ・本プラグインはMIT Licenseのもとで公開されています。
  * ・本プラグイン自体は商用・非商用を問わず利用可能です。
  * ・改変・再配布は自由ですが、改変時はオリジナルの著作表示を残してください。
  * ・組み合わせ対象となる他プラグインの著作権・ライセンス条件に従う義務があります。

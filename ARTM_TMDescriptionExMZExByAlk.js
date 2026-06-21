@@ -3,13 +3,15 @@
 // 改変元: ARTM_TMDescriptionExMZ.js
 // 改変者: あるく
 // 改変内容: 武器・防具の「スキルを追加」特徴に応じた説明ページング機能を追加
+// Copyright (c) 2025-2026 あるく
+// SPDX-License-Identifier: MIT
 // This software is released under the MIT license.
-// http://opensource.org/licenses/mit-license.php
+// https://opensource.org/license/mit
 // ===================================================
 // ARTM_TMDescriptionExMZ
 // Copyright (c) 2021 Artemis
 // This software is released under the MIT license.
-// http://opensource.org/licenses/mit-license.php
+// https://opensource.org/license/mit
 // ===================================================
 // [Version]
 // 1.0.0 初版
@@ -23,7 +25,7 @@
 //-----------------------------------------------------------------------------
 // Copyright (c) 2016 tomoaky
 // Released under the MIT license.
-// http://opensource.org/licenses/mit-license.php
+// https://opensource.org/license/mit
 //=============================================================================
 
 /*:ja
